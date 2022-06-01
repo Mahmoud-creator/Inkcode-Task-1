@@ -1,0 +1,16 @@
+How to run this project:
+1) unzip
+2) create database (there's a database backup located inside the directory of this project)
+3) connect to the database
+4) run php server (you can use php artisan serve command)
+5) enjoy
+
+
+
+Notes:
+-this is the link for the github repository for this project : 
+https://github.com/Mahmoud-creator/Inkcode-Task-1
+	 
+-For any additional explanation please contact ' mahmoudshawish2020@gmail.com '
+
+Thanks
