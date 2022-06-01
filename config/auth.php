@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Admin;
+
 return [
 
     /*
@@ -16,6 +18,11 @@ return [
     'defaults' => [
         'guard' => 'web',
         'passwords' => 'users',
+    ],
+
+    'admin'=>[
+        'driver' => 'eloquent',
+        'model' => App\Models\Admin::class,
     ],
 
     /*
@@ -40,6 +47,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins'
+        ]
     ],
 
     /*
@@ -64,6 +75,11 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => Admin::class,
+        ]
 
         // 'users' => [
         //     'driver' => 'database',
@@ -93,6 +109,10 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => Admin::class,
+        ]
     ],
 
     /*
